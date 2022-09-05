@@ -1,12 +1,41 @@
 {
-  "name": "my-project",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "name": "goit-js-08-16-ii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-08-16-ii/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vokur13/goit-js-08-16-ii"
+  },
+  "keywords": [],
+  "author": "VOLODYMYR KUROV <vokur13@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vokur13/goit-js-08-16-ii/issues"
+  },
+  "homepage": "https://github.com/vokur13/goit-js-08-16-ii",
   "devDependencies": {
-    "parcel": "latest"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-custom-dist-structure": "^1.1.18",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "stream": "^0.0.2"
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png"
+      ]
+    }
   }
 }
